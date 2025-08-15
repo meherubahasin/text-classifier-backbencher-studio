@@ -12,7 +12,6 @@ This project implements a **Convolutional Neural Network (CNN)** for binary sent
 3. **Custom CNN**  
    - Deep learning model with embedding and multiple Conv1D layers for sequential feature extraction.
   
-     
 ## Tools & Libraries
 - Python 3.11+  
 - [Pandas](https://pandas.pydata.org/)  
@@ -54,6 +53,19 @@ The pipeline includes:
    * Accuracy score on test data
    * Classification report (precision, recall, F1-score)
    * Confusion matrix visualization
+     
+## Results
+
+| Model                | Accuracy | Precision | Recall  | F1-Score |
+|----------------------|----------|-----------|---------|----------|
+| Logistic Regression  | 0.8830   | 0.8832    | 0.8828  | 0.8830   |
+| Naive Bayes          | 0.8538   | 0.8609    | 0.8440  | 0.8524   |
+| Custom CNN           | 0.8600   | 0.8600    | 0.8600  | 0.8600   |
+
+**Summary:**  
+- Logistic Regression achieved the highest accuracy among ML models.  
+- Naive Bayes performs slightly lower but is still effective for baseline comparisons.  
+- Custom CNN captures sequential text features, balancing precision and recall across classes.  
 
 **Dependencies**:
 'tensorflow', 'scikit-learn', 'matplotlib', 'joblib'
